@@ -20,4 +20,5 @@ public interface ProductDAO extends CrudRepository<Product, Integer> {
 	@Query("select p.name from Product p where p.price = :pricevar")
 	public String findByPrice( @Param("pricevar") double   price);
 	
+	
 }
