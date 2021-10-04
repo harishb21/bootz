@@ -9,4 +9,5 @@ public interface ProductService {
 	
 	public Product save(Product product);
 	public List<Product> getAll();
+	public Product get(int id);
 }

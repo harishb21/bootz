@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.citius.bootz.facade.ProductDTO;
 import com.citius.bootz.facade.ProductFacade;
-import com.citius.bootz.model.Product;
 
 @SpringBootApplication
 public class BootzApplication implements CommandLineRunner {
@@ -21,17 +20,17 @@ public class BootzApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		
-		ProductDTO pdto = new ProductDTO();
-		pdto.setName("USB");
-		pdto.setPrice(500);
-		
-		System.out.println(productFacade.save(pdto).getId() + " saved.....");
-		
-		productFacade.getProducts().stream().forEach(System.out::println);
 
+		/*
+		 * ProductDTO pdto = new ProductDTO(); pdto.setName("USB"); pdto.setPrice(500);
+		 * 
+		 * System.out.println(productFacade.save(pdto).getId() + " saved.....");
+		 * 
+		 * productFacade.getProducts().stream().forEach(System.out::println);
+		 */
 
-
+		System.out.println(productFacade.getProduct(1));
+		
 	}
 
 }

@@ -6,6 +6,7 @@ public interface ProductFacade {
 	
 	public ProductDTO save(ProductDTO productDTO);
 	public List<ProductDTO> getProducts();
+	public ProductDTO getProduct(int id);
 	
 	
 

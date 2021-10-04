@@ -30,5 +30,9 @@ public class ProductFacadeImpl  implements ProductFacade{
 		return  new ProductDTO(productService.save(productDTO.getEntity()));
 		
 	}
+	@Override
+	public ProductDTO getProduct(int id) {
+		return new ProductDTO(productService.get(id));
+	}
 		
 }
