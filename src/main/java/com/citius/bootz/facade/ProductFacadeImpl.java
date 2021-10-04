@@ -27,7 +27,7 @@ public class ProductFacadeImpl  implements ProductFacade{
 	@Override
 	public ProductDTO save(ProductDTO productDTO) {
 		
-		return  new ProductDTO(productService.save(productDTO.getEntity()));
+		return  new ProductDTO(productService.save(productDTO.entity()));
 		
 	}
 	@Override

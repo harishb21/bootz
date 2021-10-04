@@ -49,7 +49,7 @@ public class ProductDTO  implements Serializable{
 		return getId() + " : " + getName() + " : " + getPrice();
 	}
 	
-	public Product getEntity() {
+	public Product entity() {
 		Product p =  new Product(getName(),getPrice());
 		return p;
 	}
